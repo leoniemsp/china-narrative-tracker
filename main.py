@@ -15,4 +15,24 @@ articles = newsapi.get_everything(
     page_size=1
 )
 
-print(articles["articles"][0]["title"])
+article = articles["articles"][0]
+print("\nTITLE:")
+print(article["title"])
+
+print("\nAUTHOR:")
+print(article["author"])
+
+print("\nSOURCE:")
+print(article["source"]["name"])
+
+print("\nDATE:")
+print(article["publishedAt"])
+
+print("\nDESCRIPTION:")
+print(article["description"])
+
+print("\nURL:")
+print(article["url"])
+
+print("\nCONTENT:")
+print(article["content"])
